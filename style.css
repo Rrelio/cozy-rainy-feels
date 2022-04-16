@@ -1,0 +1,121 @@
+@font-face {
+    
+    font-family: Anurati-Regular;
+    src: url(fonts/Anurati-Regular.otf);
+}
+
+.wrapper{
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.day{
+    font-family: Anurati-Regular, Arial, Helvetica, sans-serif;
+    letter-spacing: 15px;
+}
+
+.date{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 10pt;
+
+}
+
+.time{
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 10pt;
+    margin-bottom: 5rem;
+
+}
+
+.weather{
+    margin: 0 auto;
+    transform: translateY(10px);
+    bottom: 0;
+    width: fit-content;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.weather .weather-info{
+    text-align: start;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self: center;
+    line-height: 15px;
+}
+
+.weather .weather-feels{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
+    font-weight: normal;
+}
+
+.weather .weather-temperature{
+    align-self: center;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26pt;
+}
+
+.weather .weather-icon img{
+    display: flex;
+    align-self: center;
+    height: 50px;
+    width: auto;
+    filter: grayscale(1);
+    -webkit-filter: drop-shadow(2px 2px rgba(0, 0, 0, .2));
+    filter: drop-shadow(1px 2px rgba(0, 0, 0, .2));
+}
+
+.day>div{
+    font-size: 32pt;
+}
+
+.widget{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    color: #f2f2f2;
+    text-shadow: 2px 2px rgba(0, 0, 0, .1);
+}
+
+.center-widget{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.bottom-widget{
+    position: relative;
+}
+
+.visualizer-container {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.visualizer-container__bar {
+
+    display: inline-block;
+    background: #f2f2f2;
+    margin: 0 2px;
+    width: 5px;
+}

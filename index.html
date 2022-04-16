@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <video width="100%" height="auto" muted autoplay loop style="position: absolute; bottom: 0; z-index: -100;">
+            <source src="images/Chillhop White Oak live wallpaper.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="widget">
+            <div class="center-widget">
+                <div class="weather">
+                    <div class="weather-icon"><img src="http://openweathermap.org/img/wn/10d@2x.png" draggable="false"></div>
+                    <div class="weather-temperature">29°</div>
+                    <div class="weather-info">
+                        <div class="weather-desc">Haze</div>
+                        <div class="weather-feels">Feels like <span>29°</span></div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div>FRIDAY</div>
+                </div>
+                <div class="date">
+                    <div>19 NOVEMBER, 2021.</div>
+                </div>
+                <div class="time">
+                    <div>— 22:48 —</div>
+                </div>
+            </div>
+            <div class="bottom-widget">
+                <audio loop>
+                    <source src="images/lofi.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio> 
+                <div class="visualizer-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
