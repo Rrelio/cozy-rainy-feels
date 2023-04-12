@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/<user_name>/public_html/<sub_folder>
+    - /bin/cp -r * $DEPLOYPATH
