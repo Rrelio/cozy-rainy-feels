@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/<user_name>/public_html/<sub_folder>
+    - export DEPLOYPATH=/home/xiblgpah/public_html/cozy-rainy-feels
     - /bin/cp -r * $DEPLOYPATH
